@@ -14,6 +14,7 @@
 		66AE169B1FDE2796003307BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66AE169A1FDE2796003307BB /* Assets.xcassets */; };
 		66AE169E1FDE2796003307BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66AE169C1FDE2796003307BB /* LaunchScreen.storyboard */; };
 		66AE16A91FDE2796003307BB /* UnifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE16A81FDE2796003307BB /* UnifyTests.swift */; };
+		66AE16B41FDE29C2003307BB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE16B31FDE29C2003307BB /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		66AE16A41FDE2796003307BB /* UnifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66AE16A81FDE2796003307BB /* UnifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifyTests.swift; sourceTree = "<group>"; };
 		66AE16AA1FDE2796003307BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66AE16B31FDE29C2003307BB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				66AE16901FDE2796003307BB /* AppDelegate.swift */,
-				66AE16921FDE2796003307BB /* ViewController.swift */,
+				66AE16B51FDE29DD003307BB /* controllers */,
 				66AE16941FDE2796003307BB /* Main.storyboard */,
 				66AE169A1FDE2796003307BB /* Assets.xcassets */,
 				66AE169C1FDE2796003307BB /* LaunchScreen.storyboard */,
@@ -97,6 +99,15 @@
 				66AE16AA1FDE2796003307BB /* Info.plist */,
 			);
 			path = UnifyTests;
+			sourceTree = "<group>";
+		};
+		66AE16B51FDE29DD003307BB /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				66AE16921FDE2796003307BB /* ViewController.swift */,
+				66AE16B31FDE29C2003307BB /* CameraViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66AE16931FDE2796003307BB /* ViewController.swift in Sources */,
+				66AE16B41FDE29C2003307BB /* CameraViewController.swift in Sources */,
 				66AE16991FDE2796003307BB /* Unify.xcdatamodeld in Sources */,
 				66AE16911FDE2796003307BB /* AppDelegate.swift in Sources */,
 			);
@@ -360,6 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UL42AV8U5L;
 				INFOPLIST_FILE = Unify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChrishonWyllie.Unify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,6 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UL42AV8U5L;
 				INFOPLIST_FILE = Unify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChrishonWyllie.Unify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
